@@ -26,9 +26,9 @@ contract security{
 	}
 	
 	//Issuer can add a corporate action contract
-	function addCorporateAction(address contr){
+	function addCorporateAction(corpAct contr){
 	    if (issuer !=msg.sender) return;
-	    cAContracts[currentState] == contr;
+	    cAContracts[currentState] = contr;
 	    currentState++;
 	}
 	
